@@ -75,4 +75,118 @@ header ul li a:hover {
   min-width: 250px;
 }
 
+/* ---------------------------------- */
+/*               mixins               */
+/* ---------------------------------- */
+.cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.cards .card1 {
+  background-color: blue;
+  width: 25%;
+  height: 15rem;
+  border-radius: 1rem;
+  color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card2 {
+  background-color: green;
+  width: 25%;
+  height: 15rem;
+  border-radius: 1rem;
+  color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card3 {
+  background-color: purple;
+  width: 25%;
+  height: 15rem;
+  border-radius: 1rem;
+  color: rgb(229, 88, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card4 {
+  background-color: maroon;
+  width: 25%;
+  height: 15rem;
+  border-radius: 1rem;
+  color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------- */
+/*               Extend               */
+/* ---------------------------------- */
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: #343a40;
+  width: 50%;
+  height: 10rem;
+  color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.articles .article2 {
+  background-color: olivedrab;
+  color: #343a40;
+}
+
+footer p {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+footer .social-icons {
+  display: flex;
+  height: 10rem;
+}
+footer .social-icons .social1 {
+  width: 20%;
+  background-color: #b92f2f;
+  font-size: 1rem;
+  color: rgb(100, 0, 0);
+}
+footer .social-icons .social2 {
+  width: 20%;
+  background-color: #cc3636;
+  font-size: 2rem;
+  color: purple;
+}
+footer .social-icons .social3 {
+  width: 20%;
+  background-color: #d14a4a;
+  font-size: 3rem;
+  color: orange;
+}
+footer .social-icons .social4 {
+  width: 20%;
+  background-color: #d65f5f;
+  font-size: 4rem;
+  color: rgb(79, 114, 79);
+}
+footer .social-icons .social5 {
+  width: 20%;
+  background-color: #db7373;
+  font-size: 5rem;
+  color: pink;
+}
+
 /*# sourceMappingURL=style.css.map */

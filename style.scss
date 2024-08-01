@@ -26,7 +26,9 @@ body {
     color: $font-color;
 }
 
-// Header
+
+
+//* Header
 
 header {
     background-color: $nav-bg-color;
@@ -65,7 +67,9 @@ header {
     }
 }
 
-// banner
+
+
+//* Banner
 
 .banner {
     background-color: $bannerBgColor;
@@ -77,6 +81,7 @@ header {
     line-height: 1.5;
 
     aside {
+        
         button {
             background-color: $buttonBgColor;
             padding: 0.75rem 1.5rem;
@@ -100,6 +105,122 @@ header {
         max-width: 400px;
         min-width: 250px;
     }
+}
 
 
+
+//* Cards
+
+/* ---------------------------------- */
+/*               mixins               */
+/* ---------------------------------- */
+
+@mixin myBox($bckColor, $color) {
+    background-color: $bckColor;
+    width: 25%;
+    height: 15rem;
+    border-radius: 1rem;
+    color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+    .card1 {
+        @include myBox(blue, lightblue)
+    }
+
+    .card2 {
+        @include myBox(green, yellowgreen)
+    }
+
+    .card3 {
+        @include myBox(purple, rgb(229, 88, 229))
+    }
+
+    .card4 {
+        @include myBox(maroon, salmon)
+    }
+}
+
+
+
+//* Articles
+
+/* ---------------------------------- */
+/*               Extend               */
+/* ---------------------------------- */
+
+.articles {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+
+    .article1 {
+        background-color: $darkColor;
+        width: 50%;
+        height: 10rem;
+        color: $lightColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .article2 {
+        @extend .article1;
+        background-color: olivedrab;
+        color: $darkColor;
+    }
+}
+
+
+
+//* Footer
+
+//! For Loop
+
+//! If-Else
+
+footer {
+    $dark : 1;
+
+    p {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @if $dark==1 {
+            background-color: gray;
+        }
+
+        @else if $dark==2 {
+            background-color: red;
+        }
+
+        @else {
+            background-color: orange;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        height: 10rem;
+        $textColor: rgb(100, 0, 0), purple, orange, rgb(79, 114, 79), pink;
+
+        @for $i from 1 through 5 {
+            .social#{$i} {
+                width: 20%;
+                background-color: lighten(brown, $i*5);
+                font-size: 1rem * $i;
+                color: nth($textColor, $i);
+            }
+        }
+    }
 }
