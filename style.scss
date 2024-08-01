@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------- */
+/*        variable declaration        */
+/* ---------------------------------- */
+
+$bg-color: pink;
+$font-fam: cursive;
+$font-size: 1.2rem;
+$font-color: color;
+$nav-bg-color: rgb(134, 199, 221);
+$my-border: 2px solid whitesmoke;
+$bannerBgColor: darkblue;
+$buttonBgColor: yellowgreen;
+$lightColor: #f8f9fa;
+$darkColor: #343a40;
+
+body {
+    background-color: $bg-color;
+    font-family: $font-fam;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+// Header
+
+header {
+    background-color: $nav-bg-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    img {
+        width: 80px;
+        border: 2px solid whitesmoke;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            padding: 0.5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+// banner
+
+.banner {
+    background-color: $bannerBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    line-height: 1.5;
+
+    aside {
+        button {
+            background-color: $buttonBgColor;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            color: $lightColor;
+            border-radius: 5px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: darken($buttonBgColor, 10%);
+                cursor: pointer;
+                transform: scale(0.97);
+            }
+        }
+    }
+
+    img {
+        width: 30%;
+        max-width: 400px;
+        min-width: 250px;
+    }
+
+
+}

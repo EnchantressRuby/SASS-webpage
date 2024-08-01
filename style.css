@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------- */
+/*        variable declaration        */
+/* ---------------------------------- */
+body {
+  background-color: pink;
+  font-family: cursive;
+  font-size: 1.2rem;
+  color: color;
+}
+
+header {
+  background-color: rgb(134, 199, 221);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  width: 80px;
+  border: 2px solid whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+header ul li a:hover {
+  color: black;
+}
+
+.banner {
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  line-height: 1.5;
+}
+.banner aside button {
+  background-color: yellowgreen;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  color: #f8f9fa;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.banner aside button:hover {
+  background-color: #7ba428;
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.banner img {
+  width: 30%;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */
